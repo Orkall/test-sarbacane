@@ -1,0 +1,43 @@
+// Variables
+@use 'variables/colors';
+// Mixins
+// @use 'variables/mixins';
+// Variables
+@use 'template/header';
+@use 'template/home';
+@use 'template/table';
+
+html {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+
+    body {
+        font-size: 1.6rem;
+        padding: 0;
+        margin: 0;
+
+        button {
+            cursor: pointer;
+        }
+    }
+}
+
+@font-face {
+    font-family: 'Poppin';
+    src: url(../../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../../assets/fonts/Inter/static/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: 'InterB';
+    src: url(../../assets/fonts/Inter/static/Inter-Bold.ttf);
+}
