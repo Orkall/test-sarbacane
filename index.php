@@ -23,7 +23,7 @@ require "regex.php";
 
         </div>
         <div class="sarbacane-form">
-            <form autocomplete="off" action="table.php" method="post">
+            <form autocomplete="off" action="" method="post">
                 <h2>Inscription Conférence Annuelle</h2>
                 <p>Le 23 septembre à partir de 18h00 </p>
                 <p class="spanned">Grand Palais Paris</p>

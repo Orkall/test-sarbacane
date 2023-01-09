@@ -28,7 +28,7 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'Envoyer') {
         $erreurs['telephone'] = 'Le téléphone est obligatoire.';
     } else {
         if (!preg_match("/^(0|\+33)[1-9]([0-9]{8})$/", $_POST['telephone'])) {
-            $erreurs['telephone'] = 'Le numero n\'est pas valide.';
+            $erreurs['telephone'] = 'Le téléphone n\'est pas valide.';
         }
     }
     if (empty($_POST['societe'])) {
@@ -41,7 +41,7 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'Envoyer') {
         $erreurs['cPostal'] = 'Le code postal est obligatoire.';
     } else {
         if (!preg_match("/^\b[0-9]{5}\b$/", $_POST['cPostal'])) {
-            $erreurs['cPostal'] = 'Le code n\'est pas valide.';
+            $erreurs['cPostal'] = 'Le code postal n\'est pas valide.';
         }
     }
     if (empty($_POST['ville'])) {

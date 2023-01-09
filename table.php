@@ -12,7 +12,7 @@ $resultats = $requete->fetchAll();
 
 include 'header.php'; ?>
 <main role="main">
-    <a href="index.php">Acceuil</a>
+    <a href="index.php">Accueil</a>
     <div class="centrage-vertical">
         <div class="tableau">
             <table>
