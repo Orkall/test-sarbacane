@@ -10,7 +10,7 @@ $requete = $conn->prepare("SELECT `cNaf`,COUNT(*) FROM user GROUP BY cNaf");
 $requete->execute();
 $resultats = $requete->fetchAll();
 
-include 'header.php'; ?>
+?>
 <main role="main">
     <a href="index.php">Accueil</a>
     <div class="centrage-vertical">
