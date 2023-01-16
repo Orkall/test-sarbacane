@@ -302,3 +302,18 @@ window.addEventListener("DOMContentLoaded", function () {
     closeAllLists(e.target);
   });
 });
+function checkPhoneKey(key) {
+  return (
+    (key >= "0" && key <= "9") ||
+    [
+      "+",
+      "(",
+      ")",
+      "-",
+      "ArrowLeft",
+      "ArrowRight",
+      "Delete",
+      "Backspace",
+    ].includes(key)
+  );
+}

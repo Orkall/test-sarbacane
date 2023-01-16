@@ -1,5 +1,7 @@
 <?php
+include 'vues/header.php';
 require "regex.php";
+
 
 ?>
 <main role="main" class="main">
@@ -91,7 +93,7 @@ require "regex.php";
                     </div>
                     <div class="case">
                         <label for="telephone">Téléphone
-                            <input type="text" name="telephone" autocomplete="off" id="telephone" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['telephone'])) echo $_POST['telephone']; ?>">
+                            <input type="text" onkeydown="return checkPhoneKey(event.key)" name="telephone" autocomplete="off" id="telephone" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['telephone'])) echo $_POST['telephone']; ?>">
                         </label>
                     </div>
                 </div>
@@ -112,7 +114,7 @@ require "regex.php";
                 <div class="container-input">
                     <div class="case">
                         <label for="cPostal">Code Postal
-                            <input type="text" name="cPostal" autocomplete="off" type="email" name="cPostal" id="cPostal" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['cPostal'])) echo $_POST['cPostal']; ?>">
+                            <input type="text" onkeydown="return checkPhoneKey(event.key)" name="cPostal" autocomplete="off" type="email" name="cPostal" id="cPostal" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['cPostal'])) echo $_POST['cPostal']; ?>">
                         </label>
                     </div>
                     <div class="case autocomplete">
@@ -127,7 +129,7 @@ require "regex.php";
 
                         <label for="siren">Siren
 
-                            <input type="text" name="siren" autocomplete="off" id="siren" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['siren'])) echo $_POST['siren']; ?>">
+                            <input type="text" onkeydown="return checkPhoneKey(event.key)" name="siren" autocomplete="off" id="siren" aria-required="true" aria-invalid="false" required value="<?php if (isset($_POST['siren'])) echo $_POST['siren']; ?>">
                         </label>
                     </div>
                     <div class="case autocomplete">

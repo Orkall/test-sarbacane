@@ -1,5 +1,5 @@
 <?php
-include 'vues/header.php';
+
 require "model/config.php";
 $erreurs = [];
 
@@ -58,6 +58,6 @@ if (isset($_POST['submit']) && $_POST['submit'] === 'Envoyer') {
 
         $requete = $conn->prepare("INSERT INTO user (`nom`,`prenom`, `email`, `telephone`, `societe`, `adresse`, `cPostal`, `ville`, `siren`, `cNaf`) VALUES (?,?,?,?,?,?,?,?,?,?)");
         $requete->execute(array($_POST["nom"], $_POST["prenom"], $_POST["email"], $_POST["telephone"], $_POST["societe"], $_POST["adresse"], $_POST["cPostal"], $_POST["ville"], $_POST["siren"], $_POST["cNaf"]));
-        include "table.php";
+        include "tableContent.php";
     }
 }
